@@ -29,6 +29,7 @@ const a=new Seqence({title}).save()
   }
 }
 // qa push
+//qa child
 export const updatedBoardData = async (req, res) => {
   try {
     const { stage } = req.body
