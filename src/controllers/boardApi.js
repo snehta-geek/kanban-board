@@ -28,11 +28,11 @@ const a=new Seqence({title}).save()
     return res.send(error);
   }
 }
-
+// qa push
 export const updatedBoardData = async (req, res) => {
   try {
     const { stage } = req.body
-    const getData = await Board.findOne({ id: req.params.id })
+    const getData = await Board.findOne({ id: req.params.id }) 
     if (stage === 1 || stage === 2 || stage === 3) {
       getData.stage = stage
       const upData = await getData.save()
